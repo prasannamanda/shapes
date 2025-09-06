@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Landing Page</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    header { 
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover; 
+      color: white; 
+      height: 100vh; 
+      text-align: center; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+    }
+    header h1 { font-size: 3em; margin: 0; }
+    header p { font-size: 1.5em; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; background: rgba(0,0,0,0.6); padding: 10px 0; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 60px 20px; text-align: center; }
+    #destinations { background: #f4f4f4; }
+    #packages { background: #e9ecef; }
+    #contact { background: #f4f4f4; }
+    h2 { margin-bottom: 20px; }
+    .card-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .card img { width: 100%; border-radius: 10px; }
+    footer { background: #333; color: white; padding: 15px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Explore the World</h1>
+    <p>Your dream vacation starts here</p>
+  </header>
+
+  <!-- Destinations Section -->
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60b" alt="Paris">
+        <h3>Paris</h3>
+        <p>The city of love, lights, and amazing culture.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>Relax in crystal clear waters and white sand beaches.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549887534-3db1bd59dcca" alt="Tokyo">
+        <h3>Tokyo</h3>
+        <p>A blend of modern technology and ancient tradition.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages">
+    <h2>Travel Packages</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Budget Trip</h3>
+        <p>3 Nights, 4 Days</p>
+        <p>₹15,000 per person</p>
+      </div>
+      <div class="card">
+        <h3>Luxury Trip</h3>
+        <p>5 Nights, 6 Days</p>
+        <p>₹45,000 per person</p>
+      </div>
+      <div class="card">
+        <h3>Adventure Trip</h3>
+        <p>7 Nights, 8 Days</p>
+        <p>₹30,000 per person</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: travel@explore.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Follow us on social media for offers!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Explore Travels | Designed with ❤</p>
+  </footer>
+
+</body>
+</html>
